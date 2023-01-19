@@ -9,11 +9,11 @@ This is the hybrid development of the project GLOWUP - a skincare application th
 
 Scan the following QR code with an Android device to open it in Expo Go or a development build.
 
-<img src="https://qr.expo.dev/eas-update?updateId=116bed98-0501-42fa-bc0b-2f38eb954f9e&appScheme=exp&host=u.expo.dev" width="300" alt="Android demo app" />
+![image](https://user-images.githubusercontent.com/78846812/213345310-7a5aa5e0-7c26-43b6-b57a-011fbb67fd4e.png)
 
 Scan the following QR code with an iOS device to open it in Expo Go or a development build.
 
-<img src="https://qr.expo.dev/eas-update?updateId=ffe390fd-6935-4eac-816e-f6856e12ac84&appScheme=exp&host=u.expo.dev" width="300" alt="iOS demo app" />
+![image](https://user-images.githubusercontent.com/78846812/213345298-c5e59ef3-d6f3-4f51-9a9b-8b3812355045.png)
 
 ## How to use
 
