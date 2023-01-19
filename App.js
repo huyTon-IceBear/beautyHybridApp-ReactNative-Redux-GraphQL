@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login, Register, Home, Survey } from './src/screen';
+import { Login, Register, Home, Survey, Profile } from './src/screen';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import friendsReducer from './src/reducer/FriendReducer';
@@ -34,6 +34,7 @@ export default function App() {
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} />
           <Stack.Screen name="Survey" component={Survey} />
+          <Stack.Screen name="Profile" component={Profile} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

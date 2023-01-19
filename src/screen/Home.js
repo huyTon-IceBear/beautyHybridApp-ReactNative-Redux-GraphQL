@@ -11,7 +11,7 @@ class HomeScreen extends React.PureComponent {
       <SafeAreaView style={{ flex: 1 }}>
         <FocusedStatusBar backgroundColor={COLORS.primary} />
         <View style={{ flex: 1 }}>
-          <HomeHeader />
+          <HomeHeader navigation={this.props.navigation} />
           <Button
             style={{
               backgroundColor: '#026efd',

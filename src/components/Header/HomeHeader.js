@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { COLORS, FONTS, SIZES, assets } from '../../constants';
+import { TouchableOpacity } from 'react-native-ui-lib';
 
 export default class HomeHeader extends React.PureComponent {
   render() {
@@ -25,11 +26,18 @@ export default class HomeHeader extends React.PureComponent {
           />
 
           <View style={{ width: 50, height: 50 }}>
-            <Image
-              source={assets.person}
-              resizeMode="cover"
-              style={{ width: '100%', height: '100%', borderRadius: 50 }}
-            />
+            <TouchableOpacity
+              onPress={() => {
+                this.props.navigation.navigate('Profile');
+              }}
+            >
+              <Image
+                source={assets.person}
+                resizeMode="cover"
+                style={{ width: '100%', height: '100%', borderRadius: 50 }}
+              />
+            </TouchableOpacity>
+
             <Image
               source={assets.badge}
               resizeMode="contain"
