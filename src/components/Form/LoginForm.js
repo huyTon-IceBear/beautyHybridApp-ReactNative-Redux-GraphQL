@@ -1,6 +1,6 @@
-import React from "react";
-import { View, Incubator, Button, TouchableOpacity } from "react-native-ui-lib";
-import { Text } from "react-native";
+import React from 'react';
+import { View, Incubator, Button, TouchableOpacity } from 'react-native-ui-lib';
+import { Text } from 'react-native';
 const { TextField } = Incubator;
 
 export default class LoginForm extends React.PureComponent {
@@ -12,25 +12,25 @@ export default class LoginForm extends React.PureComponent {
           marginRight: 5,
         }}
       >
-        <View style={{ alignItems: "center", justifyContent: "center" }}>
-          <Text style={{ marginBottom: 20, fontSize: 30, fontWeight: "bold" }}>
+        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ marginBottom: 20, fontSize: 30, fontWeight: 'bold' }}>
             Login
           </Text>
         </View>
         <View
           style={{
-            flexDirection: "row",
-            justifyContent: "center",
+            flexDirection: 'row',
+            justifyContent: 'center',
             paddingTop: 5,
           }}
         >
           <Text>Don't have an account? </Text>
           <TouchableOpacity
             onPress={() => {
-              this.props.navigation.navigate("Register");
+              this.props.navigation.navigate('Register');
             }}
           >
-            <Text style={{ fontWeight: "bold" }}> Sign up</Text>
+            <Text style={{ fontWeight: 'bold' }}> Sign up</Text>
           </TouchableOpacity>
         </View>
 
@@ -42,20 +42,20 @@ export default class LoginForm extends React.PureComponent {
           }}
         >
           <TextField
-            placeholder={"Email"}
+            placeholder={'Email'}
             floatingPlaceholder
-            onChangeText={() => console.log("changed")}
+            onChangeText={() => console.log('changed')}
             enableErrors
-            validate={["required", "email"]}
-            validationMessage={["Field is required", "Email is invalid"]}
+            validate={['required', 'email']}
+            validationMessage={['Field is required', 'Email is invalid']}
           />
           <TextField
-            placeholder={"Password"}
+            placeholder={'Password'}
             floatingPlaceholder
-            onChangeText={() => console.log("changed")}
+            onChangeText={() => console.log('changed')}
             enableErrors
-            validate={["required", (value) => value.length > 6]}
-            validationMessage={["Field is required", "Password is too short"]}
+            validate={['required', (value) => value.length > 6]}
+            validationMessage={['Field is required', 'Password is too short']}
           />
         </View>
         <View
@@ -67,10 +67,13 @@ export default class LoginForm extends React.PureComponent {
         >
           <Button
             style={{
-              backgroundColor: "#026efd",
+              backgroundColor: '#026efd',
             }}
-            label={"LOGIN"}
+            label={'LOGIN'}
             size={Button.sizes.medium}
+            onPress={() => {
+              this.props.navigation.navigate('Home');
+            }}
           />
         </View>
       </View>

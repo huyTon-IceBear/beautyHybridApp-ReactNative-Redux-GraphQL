@@ -1,21 +1,21 @@
-import React from "react";
-import { View, Text, Image } from "react-native";
-import { COLORS, FONTS, SIZES, assets } from "../../constants";
+import React from 'react';
+import { View, Text, Image } from 'react-native';
+import { COLORS, FONTS, SIZES, assets } from '../../constants';
 
 export default class HomeHeader extends React.PureComponent {
   render() {
     return (
       <View
         style={{
-          backgroundColor: "#DFEEED",
+          backgroundColor: '#DFEEED',
           padding: SIZES.font,
         }}
       >
         <View
           style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
           }}
         >
           <Image
@@ -28,13 +28,13 @@ export default class HomeHeader extends React.PureComponent {
             <Image
               source={assets.person}
               resizeMode="cover"
-              style={{ width: "100%", height: "100%", borderRadius: 50 }}
+              style={{ width: '100%', height: '100%', borderRadius: 50 }}
             />
             <Image
               source={assets.badge}
               resizeMode="contain"
               style={{
-                position: "absolute",
+                position: 'absolute',
                 width: 15,
                 height: 15,
                 bottom: 0,

@@ -1,14 +1,9 @@
-import React, { useCallback, memo } from "react";
-import _ from "lodash";
-import {
-  View,
-  Text,
-  Image,
-  Incubator,
-  TouchableOpacity,
-} from "react-native-ui-lib";
-import { assets } from "../../constants";
-import { StyleSheet } from "react-native";
+import React, { useCallback, memo } from 'react';
+import _ from 'lodash';
+import { Text, Image, Incubator, TouchableOpacity } from 'react-native-ui-lib';
+import { View } from 'react-native';
+import { assets } from '../../constants';
+import { StyleSheet } from 'react-native';
 
 const PersonalInfo = () => {
   const { WheelPicker } = Incubator;
@@ -16,31 +11,27 @@ const PersonalInfo = () => {
   const ages = _.times(87, (i) => i + 13);
 
   const getItems = useCallback((values) => {
-    return _.map(values, (item) => ({ label: "" + item, value: item }));
+    return _.map(values, (item) => ({ label: '' + item, value: item }));
   }, []);
 
   return (
     <View>
-      <View
-        style={{
-          flexDirection: "collumn",
-        }}
-      >
+      <View>
         <View
           style={{
-            flexDirection: "row",
-            alignItems: "center",
+            flexDirection: 'row',
+            alignItems: 'center',
           }}
         >
           <Image source={assets.leaf} style={{ width: 30, height: 30 }} />
           <Text> What's your gender?</Text>
         </View>
         <View
-          marginT-20
-          marginB-20
           style={{
-            flexDirection: "row",
-            justifyContent: "center",
+            flexDirection: 'row',
+            justifyContent: 'center',
+            marginBottom: 20,
+            marginTop: 20,
           }}
         >
           <TouchableOpacity style={styles.button}>
@@ -59,8 +50,9 @@ const PersonalInfo = () => {
       </View>
       <View
         style={{
-          flexDirection: "row",
-          alignItems: "center",
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
         }}
       >
         <Image source={assets.leaf} style={{ width: 30, height: 30 }} />
@@ -69,7 +61,7 @@ const PersonalInfo = () => {
       <WheelPicker
         items={getItems(ages)}
         initialValue={22}
-        style={{ backgroundColor: "transparent", marginTop: 20 }}
+        style={{ backgroundColor: 'transparent', marginTop: 10 }}
       />
     </View>
   );
@@ -77,9 +69,9 @@ const PersonalInfo = () => {
 
 const styles = StyleSheet.create({
   button: {
-    flexDirection: "collumn",
-    alignItems: "center",
-    justifyContent: "space-between",
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'space-between',
     minWidth: 80,
     paddingHorizontal: 10,
     paddingVertical: 10,
