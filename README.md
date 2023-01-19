@@ -5,13 +5,15 @@ This is the hybrid development of the project GLOWUP - a skincare application th
 
 - Install dependencies: `yarn install` (or `npm install`).
 
-## Updating to New Releases
+## Preview
 
-You should only need to update the global installation of `create-react-native-app` very rarely, ideally never.
+Scan the following QR code with an Android device to open it in Expo Go or a development build.
 
-Updating the `react-native-scripts` dependency of your app should be as simple as bumping the version number in `package.json` and reinstalling your project's dependencies.
+<img src="https://qr.expo.dev/eas-update?updateId=116bed98-0501-42fa-bc0b-2f38eb954f9e&appScheme=exp&host=u.expo.dev" width="300" alt="Android demo app" />
 
-Upgrading to a new version of React Native requires updating the `react-native`, `react`, and `expo` package versions, and setting the correct `sdkVersion` in `app.json`. See the [versioning guide](https://github.com/react-community/create-react-native-app/blob/master/VERSIONS.md) for up-to-date information about package version compatibility.
+Scan the following QR code with an iOS device to open it in Expo Go or a development build.
+
+<img src="https://qr.expo.dev/eas-update?updateId=ffe390fd-6935-4eac-816e-f6856e12ac84&appScheme=exp&host=u.expo.dev" width="300" alt="iOS demo app" />
 
 ## How to use
 
